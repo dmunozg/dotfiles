@@ -207,8 +207,12 @@ bind = $mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-cop
 
 # Media Keys
 bind = ,code:172,exec, playerctl play-pause
-bind = ,code:173,exec, playerctl next
-bind = ,code:171,exec, playerctl previous
+bind = ,code:171,exec, playerctl next
+bind = ,code:173,exec, playerctl previous
+
+# Bluetooth buttons
+bind = ,code:209,exec, playerctl pause
+bind = ,code:208,exec, playerctl play
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
