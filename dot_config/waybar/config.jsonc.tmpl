@@ -114,7 +114,11 @@
     {
         "layer": "top",
         "position": "bottom",
+	{{- if eq .chezmoi.hostname "diegoLaptop" }}
+	"output": "HDMI-A-1",
+	{{- else }}
         "output": "eDP-1",
+	{{- end }}
         "height": 25,
         "spacing": 4,
         "modules-left": [
