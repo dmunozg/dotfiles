@@ -3,15 +3,11 @@
     {
         "layer": "top", // Waybar at top layer
         "position": "top", // Waybar position (top|bottom|left|right)
-	{{- if eq .chezmoi.hostname "diegoLaptop" }}
-	"output": "eDP-1",
-	{{- else }}
-        "output": "HDMI-A-1",
-	{{- end }}
+        "output": {{ .screen_main | quote }},
         "height": 25, // Waybar height (to be removed for auto height)
         "spacing": 4, // Gaps between modules (4px)
         // Choose the order of the modules
-        "modules-left": [],
+        "modules-left": []
         "modules-center": [
             "hyprland/window"
         ],
@@ -51,11 +47,7 @@
     {
         "layer": "top",
         "position": "bottom",
-	{{- if eq .chezmoi.hostname "diegoLaptop" }}
-	"output": "eDP-1",
-	{{- else }}
-        "output": "HDMI-A-1",
-	{{- end }}
+        "output": {{ .screen_main | quote }},
         "modules-left": [
             "hyprland/workspaces"
         ],
@@ -114,11 +106,7 @@
     {
         "layer": "top",
         "position": "bottom",
-	{{- if eq .chezmoi.hostname "diegoLaptop" }}
-	"output": "HDMI-A-1",
-	{{- else }}
-        "output": "eDP-1",
-	{{- end }}
+	      "output": {{ .screen_secondary | quote }},
         "height": 25,
         "spacing": 4,
         "modules-left": [
