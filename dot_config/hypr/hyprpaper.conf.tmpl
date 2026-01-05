@@ -1,6 +1,11 @@
+wallpaper {
+    monitor = {{.screen_main}}
+    path = {{.wallpaper_1}}
+    fit_mode = cover
+  }
 
-preload = {{ .wallpaper_1 }}
-preload = {{ .wallpaper_2 }}
-
-wallpaper = {{.screen_main}}, {{ .wallpaper_1 }}
-wallpaper = {{.screen_secondary}}, {{ .wallpaper_2 }}
+wallpaper {
+    monitor = {{.screen_secondary}}
+    path = {{.wallpaper_2}}
+    fit_mode = cover
+  }
