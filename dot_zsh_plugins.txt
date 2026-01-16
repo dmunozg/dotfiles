@@ -3,3 +3,4 @@ zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
 romkatv/powerlevel10k
 mattmc3/zshrc.d
+jeffreytse/zsh-vi-mode
